@@ -1,4 +1,4 @@
-#Electricity Board App
+#Electricity_Board_App
 Tech Stack:
 
 Frontend - React,  HTML, CSS, Javascript, Libraries{Material UI, HighCharts('highcharts-react-official')}
