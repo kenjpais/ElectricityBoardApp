@@ -1,4 +1,4 @@
-# ElectricityBoardApp
+#Electricity Board App
 Tech Stack:
 
 Frontend - React,  HTML, CSS, Javascript, Libraries{Material UI, HighCharts('highcharts-react-official')}
@@ -26,17 +26,6 @@ npm install highcharts
 npm install highcharts-react-official
 npm install react-select
 npm install react-router-dom
-npm install @material-ui/core
-npm install @material-ui/icons
-npm install @material-ui/lab
-npm install @mui/lab
-npm install @mui/material
-npm install @babel/core
-npm install @babel/preset-env
-npm install @babel/preset-react
-npm install webpack 
-npm install webpack-cli
-
 
 refer package.json for full list of dependencies incase of versioning issues
 
@@ -50,59 +39,22 @@ refer package.json for full list of dependencies incase of versioning issues
       "name": "frontend",
       "version": "1.0.0",
       "license": "ISC",
-      "devDependencies": {
-    "@babel/core": "^7.22.5",
-    "@babel/preset-env": "^7.22.5",
-    "@babel/preset-react": "^7.22.5",
-    "babel-loader": "^9.1.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "source-map-loader": "^1.1.3",
-    "webpack": "^5.87.0",
-    "webpack-cli": "^5.1.4"
-  },
-  "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3",
-    "@material-ui/lab": "^4.0.0-alpha.61",
-    "@mui/lab": "^5.0.0-alpha.165",
-    "@mui/material": "^5.15.10",
-    "highcharts": "^11.3.0",
-    "highcharts-react-official": "^3.2.1",
-    "react-router-dom": "^5.3.0",
-    "react-select": "^5.8.0"
-  }
+      "dependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.18.6",
+        "@material-ui/core": "^4.12.4",
+        "@material-ui/icons": "^4.11.3",
+        "@material-ui/lab": "^4.0.0-alpha.61",
+        "@mui/lab": "^5.0.0-alpha.165",
+        "@mui/material": "^5.15.10",
+        "highcharts": "^11.3.0",
+        "highcharts-react-official": "^3.2.1",
+        "react-router-dom": "^5.3.0",
+        "react-select": "^5.8.0",
+      }
 }}
 
-################ Cloning from github ##############################
-git clone 
+################ Running application directly ##################
 
-cd /ElectricityBoardApp/electric/
-
-Run backend:
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
-
-Run frontend:
-cd /ElectricityBoardApp/electric/frontend
-npm run dev
-
-
-Note: You may get an error on windows:
-    + CategoryInfo          : SecurityError: (:) [], PSSecurityE  
-   xception
-    + FullyQualifiedErrorId : UnauthorizedAccess
-
-	Solution:
-	Run this command on powershell : Set-ExecutionPolicy -ExecutionPolicy  Unrestricted -Scope Process
-
-Note: If still getting error install
-	npm install -D webpack-cli
-	npm run dev
-
-################ Running application directly using zip file #########
 Extract EB.zip into a directory
 
 cd /EB/electric/
@@ -121,7 +73,7 @@ npm run dev
 
 Backend:
 django-admin startproject backend
-cd backend
+python manage.py startapp backend
 python manage.py startapp frontend
 python manage.py startapp api
 python manage.py makemigrations
